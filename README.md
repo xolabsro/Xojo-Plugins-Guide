@@ -4,7 +4,7 @@ How to decide whether an app needs a plugin, then write, build, package and inst
 project (Xojo 2026r3+). A plugin is a native shared library (`.dll`, `.dylib`, `.so`) written in C/C++ with the
 **Xojo Plugins SDK**. It adds modules, classes, interfaces, controls, structures and enums to the Xojo language.
 
-This folder is self-contained: the guide covers everything you need, and [SDK/](SDK/) holds the SDK headers and
+This repository is self-contained: the guide covers everything you need, and [SDK/](SDK/) holds the SDK headers and
 glue code you compile against.
 
 > **Status:** derived from the Plugins SDK 2026r1 headers, glue code and examples. [Example.md](Example.md)
@@ -69,10 +69,10 @@ Continue only if the user agrees.
 
 ## 4. Where the files go
 
-- **SDK:** use `Plugins/SDK/Includes` and `Plugins/SDK/GlueCode` from this kit as they are, by path. Never edit them
+- **SDK:** use `SDK/Includes` and `SDK/GlueCode` from this repository as they are, by path. Never edit them
   and don't copy them into the plugin's folder.
 - **Plugin source and build output:** in a working folder of their own, outside the Xojo project folder and outside
-  this kit:
+  this repository:
 
 ```text
 MyPlugin/

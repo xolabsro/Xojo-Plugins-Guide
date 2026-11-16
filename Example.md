@@ -225,7 +225,7 @@ void PluginEntry(void)
 ## Build and package (Windows x64)
 
 From the working folder `TextTools\` (with `src\TextTools.cpp`), where `<VS folder>` comes from `vswhere` and
-`<SDK>` is this kit's `Plugins\SDK` (see [Building.md](Building.md)):
+`<SDK>` is this repository's `SDK` folder (see [Building.md](Building.md)):
 
 ```bat
 cmd /c "call "<VS folder>\VC\Auxiliary\Buildcvars64.bat" >nul 2>&1 && if not exist buildd mkdir buildd && cl /nologo /LD /EHsc /O2 /MD /std:c++17 /utf-8 /DWIN32 /DNDEBUG /D_WINDOWS /D_USRDLL /I "<SDK>\Includes" src\TextTools.cpp "<SDK>\GlueCode\PluginMain.cpp" /Fo:buildd\ /Fe:buildd\TextTools.dll"

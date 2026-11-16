@@ -4,7 +4,7 @@ Every build compiles your sources **plus `GlueCode/PluginMain.cpp`** from [SDK/]
 include path, into one shared library. Build one library per target.
 
 The commands below run from the plugin's working folder ([README](README.md#4-where-the-files-go)) and use `SDK`
-for the full path of this kit's `Plugins/SDK` folder, e.g. `F:\Xojo_Templates_Kit\Plugins\SDK`.
+for the full path of this repository's `SDK` folder, e.g. `F:\Xojo-Plugins-Guide\SDK`.
 
 ## Windows (Visual Studio C++ toolchain)
 
